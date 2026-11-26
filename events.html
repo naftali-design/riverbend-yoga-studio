@@ -36,7 +36,8 @@
     <section>
       <h2>Request a Spot or Class Information</h2>
       <p>Complete the form below to reserve a spot in an upcoming workshop or ask a question about classes. A studio coordinator will respond within one business day.</p>
-      <form action="#" method="post">
+      <div id="welcome-back-banner" class="info-banner" role="status" aria-live="polite" hidden></div>
+      <form id="spot-request-form" action="#" method="post">
         <fieldset>
           <legend>Your Contact Details</legend>
           <div>
@@ -75,6 +76,7 @@
               <option value="workshop-back-relief">Workshop: Healthy Back &amp; Desk Relief</option>
               <option value="workshop-balance">Workshop: Balance, Stability &amp; Chair Support</option>
             </select>
+            <p id="program-note" class="program-note" aria-live="polite" hidden></p>
           </div>
           <div>
             <label for="experience-level">Experience Level (required):</label>
@@ -91,6 +93,7 @@
             <textarea id="student-message" name="student_message" rows="5" cols="40" minlength="10" placeholder="Tell us about your schedule preferences, goals, or any accommodations that would make your visit comfortable."></textarea>
           </div>
         </fieldset>
+        <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
         <button type="submit">Submit Spot Request</button>
       </form>
     </section>
@@ -99,5 +102,6 @@
     <p>&copy; 2026 Riverbend Yoga Studio | 412 Riverbend Way, Suite 200 | (555) 234-8890</p>
     <p><a href="index.html">Return to Home</a> | <a href="about.html">View Accessibility Accommodations</a></p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
