@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops &amp; Registration | Riverbend Yoga Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p><strong>Riverbend Yoga Studio</strong> — Calm, Inclusive Movement &amp; Breathwork</p>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Classes &amp; Services</a></li>
+        <li><a href="about.html">About &amp; Accessibility</a></li>
+        <li><a href="events.html" aria-current="page">Workshops &amp; Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Monthly Workshops &amp; Spot Requests</h1>
+    <p>Join our small-group seasonal workshops designed to deepen your understanding of gentle movement, balance, and everyday stress relief.</p>
+    <section>
+      <h2>Upcoming Monthly Workshops</h2>
+      <figure>
+        <img src="yoga-workshop.jpg" alt="Participants seated in a circle on yoga mats during a supportive weekend breathwork and alignment workshop">
+        <figcaption>Students practicing supported seated posture alignment during our monthly Beginner Foundations Workshop.</figcaption>
+      </figure>
+      <ul>
+        <li><strong>First Saturday — Yoga for Complete Beginners (1:00 PM – 2:30 PM):</strong> Learn foundational poses, how to use props effectively, and simple breathing techniques in a relaxed, Q&amp;A-friendly setting.</li>
+        <li><strong>Second Sunday — Healthy Back &amp; Desk Relief (2:00 PM – 3:30 PM):</strong> Targeted mobility and restorative stretches for shoulders, hips, and spine stiffness caused by prolonged sitting.</li>
+        <li><strong>Fourth Saturday — Balance, Stability &amp; Chair Support (11:00 AM – 12:15 PM):</strong> Practical balance drills and gentle strength work tailored for older adults and anyone building steady confidence.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Request a Spot or Class Information</h2>
+      <p>Complete the form below to reserve a spot in an upcoming workshop or ask a question about classes. A studio coordinator will respond within one business day.</p>
+      <div id="welcome-back-banner" class="info-banner" role="status" aria-live="polite" hidden></div>
+      <form id="spot-request-form" action="#" method="post">
+        <fieldset>
+          <legend>Your Contact Details</legend>
+          <div>
+            <label for="student-name">Full Name (required):</label>
+            <input type="text" id="student-name" name="student_name" required minlength="2" placeholder="e.g., Jordan Taylor">
+          </div>
+          <div>
+            <label for="student-email">Email Address (required):</label>
+            <input type="email" id="student-email" name="student_email" required placeholder="e.g., jordan@example.com">
+          </div>
+          <div>
+            <label for="student-phone">Phone Number (optional; include if you prefer a call or text):</label>
+            <input type="tel" id="student-phone" name="student_phone" pattern="[0-9+\(\)\-\s]{7,20}" title="Enter 7 to 20 characters using digits, spaces, dashes, plus signs, or parentheses" placeholder="e.g., (555) 123-4567">
+          </div>
+          <div>
+            <label for="preferred-contact">Preferred Contact Method (required):</label>
+            <select id="preferred-contact" name="preferred_contact" required>
+              <option value="">-- Please choose an option --</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone Call</option>
+              <option value="text">Text Message</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Class or Workshop Interest</legend>
+          <div>
+            <label for="program-interest">Class or Event Interest (required):</label>
+            <select id="program-interest" name="program_interest" required>
+              <option value="">-- Select a class or workshop --</option>
+              <option value="gentle-foundations">Gentle &amp; Chair-Supported Yoga</option>
+              <option value="vinyasa-flow">Mindful Vinyasa Flow</option>
+              <option value="restorative">Restorative Yoga &amp; Breathwork</option>
+              <option value="private-session">Private One-on-One Session</option>
+              <option value="workshop-beginners">Workshop: Yoga for Complete Beginners</option>
+              <option value="workshop-back-relief">Workshop: Healthy Back &amp; Desk Relief</option>
+              <option value="workshop-balance">Workshop: Balance, Stability &amp; Chair Support</option>
+            </select>
+            <p id="program-note" class="program-note" aria-live="polite" hidden></p>
+          </div>
+          <div>
+            <label for="experience-level">Experience Level (required):</label>
+            <select id="experience-level" name="experience_level" required>
+              <option value="">-- Select your experience level --</option>
+              <option value="brand-new">Brand New to Yoga</option>
+              <option value="some-experience">Some Beginner Experience</option>
+              <option value="returning">Returning After a Break</option>
+              <option value="regular">Regular Practitioner</option>
+            </select>
+          </div>
+          <div>
+            <label for="student-message">Questions, Goals, or Accessibility Notes (optional):</label>
+            <textarea id="student-message" name="student_message" rows="5" cols="40" minlength="10" placeholder="Tell us about your schedule preferences, goals, or any accommodations that would make your visit comfortable."></textarea>
+          </div>
+        </fieldset>
+        <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+        <button type="submit">Submit Spot Request</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Riverbend Yoga Studio | 412 Riverbend Way, Suite 200 | (555) 234-8890</p>
+    <p><a href="index.html">Return to Home</a> | <a href="about.html">View Accessibility Accommodations</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
