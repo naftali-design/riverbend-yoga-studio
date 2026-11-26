@@ -21,6 +21,20 @@
   <main>
     <h1>Classes, Private Sessions &amp; Pricing</h1>
     <p>Our class offerings are structured to support gradual progress, stress recovery, and functional mobility at every stage of life.</p>
+    <section id="class-finder" aria-labelledby="finder-heading">
+      <h2 id="finder-heading">Find Your Best-Fit Class</h2>
+      <p>Choose your main goal to see matching classes and sessions. Save one as your preferred class and we will pre-select it on the registration form.</p>
+      <div id="saved-class-banner" class="info-banner" role="status" aria-live="polite" hidden></div>
+      <div class="filter-buttons" role="group" aria-label="Filter classes by goal">
+        <button type="button" data-filter="all" aria-pressed="true">All Offerings</button>
+        <button type="button" data-filter="beginner" aria-pressed="false">Beginner &amp; Chair-Supported</button>
+        <button type="button" data-filter="desk" aria-pressed="false">Desk Relief &amp; Mobility</button>
+        <button type="button" data-filter="relax" aria-pressed="false">Deep Relaxation</button>
+      </div>
+      <p id="filter-status" class="filter-status" role="status" aria-live="polite"></p>
+      <div id="class-finder-results"></div>
+      <noscript><p>The class finder needs JavaScript. All of our classes are listed below.</p></noscript>
+    </section>
     <section>
       <h2>Group Class Types</h2>
       <article>
@@ -59,5 +73,6 @@
     <p>&copy; 2026 Riverbend Yoga Studio | 412 Riverbend Way, Suite 200 | (555) 234-8890</p>
     <p>Inclusive movement for beginners, professionals, and older adults.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
